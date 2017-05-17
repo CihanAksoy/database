@@ -20,7 +20,8 @@ use Illuminate\Database\Query\Processors\Processor;
 
 class Builder
 {
-    use BuildsQueries, Macroable {
+    use BuildsQueries;
+    use Macroable {
         __call as macroCall;
     }
 
